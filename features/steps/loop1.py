@@ -20,7 +20,8 @@ def open_target_product(context):
     context.driver = webdriver.Chrome()
     context.driver.get("https://www.target.com/p/men-39-s-packable-jacket-all-in-motion-8482/-/A-89823674?preselect=89391012#lnk=sametab")
 
-    driver.implicitly_wait(5)
+# implicit wait example
+    context.driver.implicitly_wait(5)
 
 @when('loop through colors')
 def colors(context):
