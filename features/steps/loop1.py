@@ -18,6 +18,7 @@ SELECTED_COLOR = (By.CSS_SELECTOR, "[class*='StyledVariationSelectorImage'] [cla
 def open_target_product(context):
     # open target
     context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
     context.driver.get("https://www.target.com/p/men-39-s-packable-jacket-all-in-motion-8482/-/A-89823674?preselect=89391012#lnk=sametab")
 
 # implicit wait example
