@@ -16,6 +16,7 @@ SELECTED_COLOR = (By.CSS_SELECTOR, "[class*='StyledVariationSelectorImage'] [cla
 
 @given('Open Target product page')
 def open_target_product(context):
+    context.app.main_page.open_main()
     # open target
     context.driver = webdriver.Chrome()
     context.driver.maximize_window()
